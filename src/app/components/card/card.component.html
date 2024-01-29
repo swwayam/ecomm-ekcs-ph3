@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="image" class="card-img-top" [alt]="name">
+    <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <h6 class="card-title">{{sellerName}}</h6>
+        <p class="card-text">{{desc}}</p>
+
+        <h6>${{price}}</h6>
+        <button href="#" class="btn btn-primary" (click)="onCart()">Add to cart</button>
+    </div>
+</div>
