@@ -13,6 +13,7 @@ import { CardComponent } from './components/card/card.component';
 export class AppComponent {
   title = 'ecomm-ph3';
 
+  cartCount = 0
   // I have one item what all things are required from backed -> name, price , id , img, desc , quantity , sellerName
 
   // single = {
@@ -25,6 +26,9 @@ export class AppComponent {
   //   sellerName: 'Yadav Ji Ka Beta',
   // }
 
+  increaseCartCount(){
+    this.cartCount+=1
+  }
 
   items = [
     {

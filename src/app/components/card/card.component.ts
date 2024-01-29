@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -15,8 +15,10 @@ export class CardComponent {
   @Input() sellerName !: any
   @Input() price !: any
 
+  @Output() btnClick = new EventEmitter()
+
   onCart(){
-    console.log(this.id);
+    this.btnClick.emit()
   }
 
 
