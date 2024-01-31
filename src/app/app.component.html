@@ -17,7 +17,7 @@
 
 
   @for (item of items; track $index) {
-  <app-card [name]="item.name" (btnClick)="increaseCartCount()" [desc]="item.desc" [image]="item.img" [id]="item.id"
+  <app-card [name]="item.name" (btnClick)="increaseCartCount()" (removeBtnClick)="decreaseCount()" [desc]="item.desc" [image]="item.img" [id]="item.id"
     [sellerName]="item.sellerName" [price]="item.price"></app-card>
   }
 

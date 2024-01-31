@@ -30,6 +30,10 @@ export class AppComponent {
     this.cartCount+=1
   }
 
+  decreaseCount(){
+    this.cartCount-=1
+  }
+
   items = [
     {
       name: 'Hair Mask WoW',

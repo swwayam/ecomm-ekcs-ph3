@@ -16,10 +16,18 @@ export class CardComponent {
   @Input() price !: any
 
   @Output() btnClick = new EventEmitter()
+  @Output() removeBtnClick = new EventEmitter()
+
+  isAddToCart = true
 
   onCart(){
+    this.isAddToCart = false
     this.btnClick.emit()
   }
 
+  onRemove(){
+    this.isAddToCart = true
+    this.removeBtnClick.emit()
+  }
 
 }
